@@ -1,0 +1,1 @@
+((type story) (title "Test") (deleted t) (url "https://www.google.com") (by "hgupta41") (ip "::1") (votes ((1507318347 "::1" "hgupta41" up 0))) (text "First post") (sockvotes 0) (score 1) (time 1507318347) (id 1))

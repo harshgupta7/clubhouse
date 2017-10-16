@@ -1289,13 +1289,13 @@ Arc 3.1 documentation: https://arclanguage.github.io/ref.
                 (namespace-set-variable-value! '_thatexpr expr))
               (tl2 interactive?)))))))
 
-;; (define (aload1 p)
-;;   (let ((x (read p)))
-;;     (if (eof-object? x)
-;;         #t
-;;         (begin
-;;           (arc-eval x)
-;;           (aload1 p)))))
+(define (aload1 p)
+  (let ((x (read p)))
+    (if (eof-object? x)
+        #t
+        (begin
+          (arc-eval x)
+          (aload1 p)))))
 
 (define (atests1 p)
   (let ((x (read p)))
